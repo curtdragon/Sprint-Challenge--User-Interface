@@ -71,6 +71,11 @@ p {
     width: 800px;
     margin: 0 auto;
 }
+.container.about-page {
+    width: 800px;
+    margin: 0 auto;
+}
+
 header {
 	margin-bottom: 40px;
 	display: flex;
@@ -107,6 +112,11 @@ header .logo {
 .jumbo {
     margin-bottom: 30px;
 }
+
+.jumbo-about {
+    margin-bottom: 30px;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -209,4 +219,37 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+
+.cta {
+    display: flex;
+    margin-top: 72px;
+    justify-content: flex-end;
+}
+
+.cta .cta-text {
+    font-size: 72px;
+    text-align: center;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    margin: 0 82px 0 0;
+}
+
+.cta .cta-text button {
+    border: 1px double black;
+    font-size: 16px;
+    background: white;
+    width: 170px;
+    height: 32px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+    background: black;
+    color: white;
 }
