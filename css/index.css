@@ -71,10 +71,7 @@ p {
     width: 800px;
     margin: 0 auto;
 }
-.container.about-page {
-    width: 800px;
-    margin: 0 auto;
-}
+
 
 header {
 	margin-bottom: 40px;
@@ -84,7 +81,7 @@ header {
 }
 
 header nav {
-	margin-top: 35px;
+	margin-top: 45px;
 	width: 620px;
 	display: flex;
 	justify-content: space-around;
@@ -110,10 +107,6 @@ header .logo {
 	align-items: center;
 }
 .jumbo {
-    margin-bottom: 30px;
-}
-
-.jumbo-about {
     margin-bottom: 30px;
 }
 
@@ -221,35 +214,55 @@ footer nav a {
     text-decoration: none;
 }
 
+/* About styling */
 
-.cta {
-    display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
+.container.about-page {
+    width: 800px;
+    margin: 0 auto;
 }
 
-.cta .cta-text {
-    font-size: 72px;
-    text-align: center;
-    letter-spacing: 5px;
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    align-items: center;
-    margin: 0 82px 0 0;
+.jumbo-about {
+    margin-bottom: 30px;
 }
 
-.cta .cta-text button {
-    border: 1px double black;
-    font-size: 16px;
-    background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.about-text {
+    border-bottom: 1px dashed black;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-content .info {
+    width: 370px;
+    margin: 20px 0;
+    border-bottom: 1px dashed black;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-content img{
+    padding-bottom: 14px;
+}
+.about-content .info button {
+    padding: 10px 40px;
+    margin-top: 20px;
     cursor: pointer;
+    background: white;
+    border-radius: 5px;
+    border: 2px solid black;
 }
 
-.cta .cta-text button:hover {
+.about-content .info button:hover {
     background: black;
     color: white;
-}
+} 
