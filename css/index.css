@@ -106,9 +106,42 @@ header .logo {
 	display: flex;
 	align-items: center;
 }
+
+/* Stretch animation */
+@keyframes slide {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
 .jumbo {
     margin-bottom: 30px;
+    animation-duration: 4s;
+    animation-name: slide;
+    max-width: 100%;
 }
+/* Stretch responsive breakpoints using media queries */
+
+ @media only screen and (max-width: 799px) {
+  [class="jumbo"] {
+    width: 80%;
+  }
+} 
+
+ @media only screen and (max-width: 600px) {
+  [class="jumbo"] {
+    width: 60%;
+  }
+} 
+
+ @media only screen and (max-width: 400px) {
+  [class="jumbo"] {
+    width: 40%;
+  }
+} 
 
 .top-content {
     display: flex;
@@ -141,7 +174,7 @@ header .logo {
 }
 
 .middle-content .boxes .box {
-    width: 12.5%;
+    width: 12.5%; 
     height: 100px;
     background: black;
     margin: 20px 2.5%;
@@ -150,35 +183,67 @@ header .logo {
     align-items: center;
     justify-content: center;
 }
+/* More animations */
 .middle-content .boxes .box.box1 {
     background: teal;
+    animation-duration: 3s;
+    animation-name: slide;
+    animation-delay 3s;
 }
+
 .middle-content .boxes .box.box2 {
     background: gold;
+    animation-duration: 3s;
+    animation-name: slide;
+    animation-delay 3s;
 }
 .middle-content .boxes .box.box3 {
     background: cadetblue;
+    animation-duration: 3s;
+    animation-name: slide;
+    animation-delay 3s;
 }
 .middle-content .boxes .box.box4 {
     background: coral;
+    animation-duration: 3s;
+    animation-name: slide;
+    animation-delay 3s;
 }
 .middle-content .boxes .box.box5 {
     background: crimson;
+    animation-duration: 3s;
+    animation-name: slide;
+    animation-delay 3s;
 }
 .middle-content .boxes .box.box6 {
     background: forestgreen;
+    animation-duration: 3s;
+    animation-name: slide;
+    animation-delay 3s;
 }
 .middle-content .boxes .box.box7 {
     background: darkorchid;
+    animation-duration: 3s;
+    animation-name: slide;
+    animation-delay 3s;
 }
 .middle-content .boxes .box.box8 {
     background: hotpink;
+    animation-duration: 3s;
+    animation-name: slide;
+    animation-delay 3s;
 }
 .middle-content .boxes .box.box9 {
     background: indigo;
+    animation-duration: 3s;
+    animation-name: slide;
+    animation-delay 3s;
 }
 .middle-content .boxes .box.box10 {
     background: dodgerblue;
+    animation-duration: 3s;
+    animation-name: slide;
+    animation-delay 3s;
 }
 
 .bottom-content {
